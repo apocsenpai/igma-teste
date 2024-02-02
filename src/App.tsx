@@ -69,8 +69,14 @@ const App = () => {
             <input className="mt-stack-xxs h-stack-lg w-full outline-none border-b-thin border-b-base-dark-main font-semibold text-base-dark-main placeholder:text-base-dark-main" placeholder="Email"></input>
             <button className="mt-stack-lg px-inline-xxxs py-3 bg-base-dark-main text-base-light-contrast font-semibold">Assinar Newsletter</button>
           </form>
-          <div className="overflow-hidden relative">
-            <div className="flex gap-stack-xxs pl-inline-xxs">
+          <div className="overflow-hidden whitespace-nowrap">
+            <div className="inline-flex gap-inline-xxs pl-inline-xxs animate-slideToLeft">
+              <img src={Celular1} alt="MRV" className="max-w-stack-huge" />
+              <img src={Celular2} alt="Brasil Prev" className="max-w-stack-huge" />
+              <img src={Celular3} alt="IDB" className="max-w-stack-huge" />
+              <img src={Celular4} alt="Comgas" className="max-w-stack-huge" />
+            </div>
+            <div className="inline-flex gap-inline-xxs pl-inline-xxs animate-slideToLeft">
               <img src={Celular1} alt="MRV" className="max-w-stack-huge" />
               <img src={Celular2} alt="Brasil Prev" className="max-w-stack-huge" />
               <img src={Celular3} alt="IDB" className="max-w-stack-huge" />

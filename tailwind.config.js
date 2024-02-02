@@ -78,12 +78,12 @@ export default {
         'stack-giant': '200px',
       },
       animation: {
-        slideCart: 'slideToLeft 300ms ease-out forwards',
+        slideToLeft: '20s slideToLeft linear infinite',
       },
       keyframes: {
         slideToLeft: {
-          '0%': { right: '-100%' },
-          '100%': { right: '0' },
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
         },
       },
       colors: {
