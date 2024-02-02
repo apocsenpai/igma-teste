@@ -69,38 +69,19 @@ const App = () => {
             <img src={Hsl} alt="Hospital Sírio-Libanês" />
           </div>
         </section>
-        <section className="flex flex-col gap-stack-xxl py-stack-xxl lg:flex-row lg:items-center lg:justify-between lg:gap-[100px] lg:px-inline-sm">
-          <form onSubmit={(e) => e.preventDefault()} className="px-inline-xxs lg:px-0">
+        <section className="w-full flex flex-col gap-stack-xxl py-stack-xxl lg:flex-row lg:items-center lg:justify-between lg:gap-[100px] lg:px-inline-sm lg:h-[760px] xl:h-[880px]">
+          <form onSubmit={(e) => e.preventDefault()} className="px-inline-xxs lg:px-0 lg:w-3/4">
             <p className="text-xxs font-medium leading-sm">Assine nossa newsletter</p>
             <p className="pt-stack-md text-xs font-semibold leading-lg">Desenvolva-se conosco com conteúdos sobre  Tecnologia e Design a cada 15 dias.</p>
             <input className="mt-stack-md h-stack-lg w-full outline-none border-b-thin border-b-base-dark-main font-semibold text-base-dark-main placeholder:text-base-dark-main" placeholder="Nome"></input>
             <input className="mt-stack-xxs h-stack-lg w-full outline-none border-b-thin border-b-base-dark-main font-semibold text-base-dark-main placeholder:text-base-dark-main" placeholder="Email"></input>
             <button className="mt-stack-lg px-inline-xxxs py-3 bg-base-dark-main text-base-light-contrast font-semibold">Assinar Newsletter</button>
           </form>
-          <div className="overflow-x-hidden lg:overflow-visible whitespace-nowrap lg:whitespace-normal ">
-            <div className="inline-flex animate-slideToLeft lg:animate-none lg:flex lg:flex-grow">
-              <div className="inline-flex gap-inline-xxs pl-inline-xxs lg:flex-col">
-                <img src={Celular1} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular2} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular3} alt="" className="max-w-stack-huge lg:max-w-28" />
-              </div>
-              <div className="inline-flex gap-inline-xxs pl-inline-xxs lg:flex-col">
-                <img src={Celular4} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular5} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular6} alt="" className="max-w-stack-huge lg:max-w-28" />
-              </div>
-              <div className="inline-flex gap-inline-xxs pl-inline-xxs lg:flex-col">
-                <img src={Celular7} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular8} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular9} alt="" className="max-w-stack-huge lg:max-w-28" />
-              </div>
-              <div className="inline-flex gap-inline-xxs pl-inline-xxs lg:flex-col">
-                <img src={Celular10} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular11} alt="" className="max-w-stack-huge lg:max-w-28" />
-                <img src={Celular12} alt="" className="max-w-stack-huge lg:max-w-28" />
-              </div>
-            </div>
-            <div className="inline-flex animate-slideToLeft lg:animate-none lg:hidden ">
+
+
+          {/* Mobile carousel */}
+          <div className="overflow-hidden whitespace-nowrap lg:hidden">
+            <div className="inline-flex animate-slideToLeft">
               <div className="inline-flex gap-inline-xxs pl-inline-xxs">
                 <img src={Celular1} alt="" className="max-w-stack-huge" />
                 <img src={Celular2} alt="" className="max-w-stack-huge" />
@@ -120,6 +101,80 @@ const App = () => {
                 <img src={Celular10} alt="" className="max-w-stack-huge" />
                 <img src={Celular11} alt="" className="max-w-stack-huge" />
                 <img src={Celular12} alt="" className="max-w-stack-huge" />
+              </div>
+            </div>
+            <div className="inline-flex animate-slideToLeft">
+              <div className="inline-flex gap-inline-xxs pl-inline-xxs">
+                <img src={Celular1} alt="" className="max-w-stack-huge" />
+                <img src={Celular2} alt="" className="max-w-stack-huge" />
+                <img src={Celular3} alt="" className="max-w-stack-huge" />
+              </div>
+              <div className="inline-flex gap-inline-xxs pl-inline-xxs">
+                <img src={Celular4} alt="" className="max-w-stack-huge" />
+                <img src={Celular5} alt="" className="max-w-stack-huge" />
+                <img src={Celular6} alt="" className="max-w-stack-huge" />
+              </div>
+              <div className="inline-flex gap-inline-xxs pl-inline-xxs">
+                <img src={Celular7} alt="" className="max-w-stack-huge" />
+                <img src={Celular8} alt="" className="max-w-stack-huge" />
+                <img src={Celular9} alt="" className="max-w-stack-huge" />
+              </div>
+              <div className="inline-flex gap-inline-xxs pl-inline-xxs">
+                <img src={Celular10} alt="" className="max-w-stack-huge" />
+                <img src={Celular11} alt="" className="max-w-stack-huge" />
+                <img src={Celular12} alt="" className="max-w-stack-huge" />
+              </div>
+            </div>
+          </div>
+
+          {/* Tablet & Desktop carousel */}
+          <div className="hidden self-start lg:flex gap-inline-xxs px-inline-xxxs h-full  lg:overflow-y-hidden">
+            <div className="flex flex-col gap-inline-xxs">
+              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+                <img src={Celular1} alt="" className="w-full" />
+                <img src={Celular2} alt="" className="w-full" />
+                <img src={Celular3} alt="" className="w-full" />
+              </div>
+              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+                <img src={Celular1} alt="" className="w-full" />
+                <img src={Celular2} alt="" className="w-full" />
+                <img src={Celular3} alt="" className="w-full" />
+              </div>
+            </div>
+            <div className="flex flex-col gap-inline-xxs">
+              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+                <img src={Celular4} alt="" className="w-full" />
+                <img src={Celular5} alt="" className="w-full" />
+                <img src={Celular6} alt="" className="w-full" />
+              </div>
+              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+                <img src={Celular4} alt="" className="w-full" />
+                <img src={Celular5} alt="" className="w-full" />
+                <img src={Celular6} alt="" className="w-full" />
+              </div>
+            </div>
+            <div className="flex flex-col gap-inline-xxs">
+              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+                <img src={Celular7} alt="" className="w-full" />
+                <img src={Celular8} alt="" className="w-full" />
+                <img src={Celular9} alt="" className="w-full" />
+              </div>
+              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+                <img src={Celular7} alt="" className="w-full" />
+                <img src={Celular8} alt="" className="w-full" />
+                <img src={Celular9} alt="" className="w-full" />
+              </div>
+            </div>
+            <div className="flex flex-col gap-inline-xxs">
+              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+                <img src={Celular10} alt="" className="w-full" />
+                <img src={Celular11} alt="" className="w-full" />
+                <img src={Celular12} alt="" className="w-full" />
+              </div>
+              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+                <img src={Celular10} alt="" className="w-full" />
+                <img src={Celular11} alt="" className="w-full" />
+                <img src={Celular12} alt="" className="w-full" />
               </div>
             </div>
           </div>

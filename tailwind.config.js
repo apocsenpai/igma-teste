@@ -85,6 +85,14 @@ export default {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         },
+        initialToBottom: {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-100%)' },
+        },
+        middleToBottom: {
+          from: { transform: 'translateY(-20%)' },
+          to: { transform: 'translateY(-120%)' },
+        }
       },
       colors: {
         primary: {
