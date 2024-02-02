@@ -1,8 +1,10 @@
 import HomeTemplate from '@/components/templates/HomeTemplate';
 
 const Home = () => {
+  const isLogged = !!localStorage.getItem('user');
+
   return (
-    <HomeTemplate />
+    <HomeTemplate isLogged={isLogged} />
   );
 };
 

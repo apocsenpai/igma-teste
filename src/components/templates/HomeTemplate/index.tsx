@@ -4,10 +4,14 @@ import Introduction from '@/components/organisms/Introduction';
 import Clients from '@/components/organisms/Clients';
 import Newsletter from '@/components/organisms/Newsletter';
 
-const HomeTemplate = () => {
+interface IHomeTemplate {
+    isLogged: boolean
+}
+
+const HomeTemplate = ({ isLogged }) => {
     return (
         <>
-            <Header />
+            <Header isLogged={isLogged} />
             <main
                 className="mt-stack-xxl flex flex-col gap-stack-xxl pt-stack-xxs pb-stack-xxl
                           lg:pt-stack-xxl
