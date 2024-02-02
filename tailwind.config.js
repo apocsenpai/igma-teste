@@ -78,7 +78,7 @@ export default {
         'stack-giant': '200px',
       },
       animation: {
-        slideToLeft: '20s slideToLeft linear infinite',
+        slideToLeft: '30s slideToLeft linear infinite',
       },
       keyframes: {
         slideToLeft: {
