@@ -40,10 +40,7 @@ export const phoneImageList: ICarouselGroupItem[] = [
       component: Celular3,
       alt: 'Celular mostrando a Season Finale.',
     },
-    animation: {
-      duration: '18s',
-      type: 'initialToBottom',
-    },
+    animation: "animate-[18s_initialToBottom_linear_infinite]"
   },
   {
     firstImage: {
@@ -58,10 +55,7 @@ export const phoneImageList: ICarouselGroupItem[] = [
       component: Celular6,
       alt: 'Celular mostrando o site da igma.',
     },
-    animation: {
-      duration: '10s',
-      type: 'middleToBottom',
-    },
+    animation: "animate-[10s_middleToBottom_linear_infinite]"
   },
   {
     firstImage: {
@@ -76,10 +70,7 @@ export const phoneImageList: ICarouselGroupItem[] = [
       component: Celular9,
       alt: 'Celular mostrando uma tela de espera do aplicativo da empresa MRV.',
     },
-    animation: {
-      duration: '18s',
-      type: 'initialToBottom',
-    },
+    animation: "animate-[18s_initialToBottom_linear_infinite]"
   },
   {
     firstImage: {
@@ -94,10 +85,7 @@ export const phoneImageList: ICarouselGroupItem[] = [
       component: Celular12,
       alt: 'Celular mostrando o aplicativo Rissi.',
     },
-    animation: {
-      duration: '10s',
-      type: 'middleToBottom',
-    },
+    animation: "animate-[10s_middleToBottom_linear_infinite]"
   },
 ];
 

@@ -11,10 +11,7 @@ export interface ICarouselGroupItem {
     component: string;
     alt: string;
   };
-  animation: {
-    duration: string;
-    type: string;
-  };
+  animation: string
 }
 
 export interface IClientItem {

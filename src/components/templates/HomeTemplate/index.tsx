@@ -8,7 +8,7 @@ interface IHomeTemplate {
     isLogged: boolean
 }
 
-const HomeTemplate = ({ isLogged }) => {
+const HomeTemplate = ({ isLogged }: IHomeTemplate) => {
     return (
         <>
             <Header isLogged={isLogged} />
