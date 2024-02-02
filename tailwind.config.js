@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1441px',
+      },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
@@ -92,7 +95,7 @@ export default {
         middleToBottom: {
           from: { transform: 'translateY(-20%)' },
           to: { transform: 'translateY(-120%)' },
-        }
+        },
       },
       colors: {
         primary: {
