@@ -82,6 +82,8 @@ export default {
       },
       animation: {
         slideToLeft: '30s slideToLeft linear infinite',
+        fadeUp: '1s fadeUp ease-out forwards',
+        fadeDown: '1s fadeDown ease-out forwards',
       },
       keyframes: {
         slideToLeft: {
@@ -95,6 +97,20 @@ export default {
         middleToBottom: {
           from: { transform: 'translateY(-20%)' },
           to: { transform: 'translateY(-120%)' },
+        },
+        fadeUp: {
+          from: { transform: 'translateY(20%)', opacity: '0' },
+          to: {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
+        fadeDown: {
+          from: { transform: 'translateY(-20%)', opacity: '0' },
+          to: {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
         },
       },
       colors: {

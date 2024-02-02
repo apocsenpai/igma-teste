@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div>
       <header className="fixed top-0 w-full h-stack-xxl pr-inline-xxs flex items-center justify-between bg-background-01 z-10
-                          lg:pr-inline-lg xl:pr-inline-xl 2xl:pr-36">
+                          lg:pr-inline-lg xl:pr-inline-xl 2xl:pr-36 animate-fadeDown">
         <img src={Logo} alt="logotipo" className="w-inline-xl xl:w-stack-xxxl" />
         <button className="w-inline-sm h-stack-sm bg-primary-main rounded-circle flex justify-center items-center xl:w-inline-md xl:h-stack-md">
           <img src={User} alt="user button" />
@@ -48,6 +48,7 @@ const App = () => {
                             lg:h-[504px] lg:px-stack-xxxl lg:flex-row-reverse lg:items-start lg:justify-center
                             xl:h-[680px] xl:gap-stack-xxxl xl:px-40
                             2xl:h-[780px] 2xl:gap-40 2xl:px-72
+                            animate-fadeUp
                             ">
           <div className="px-inline-xxs flex-1 lg:px-0">
             <header className="flex gap-inline-nano items-center xl:gap-inline-xxxs">
@@ -150,48 +151,48 @@ const App = () => {
           {/* Tablet & Desktop carousel */}
           <div className="hidden self-start lg:flex lg:h-full gap-inline-xxs px-inline-xxxs lg:overflow-y-hidden">
             <div className="flex flex-col gap-inline-xxs">
-              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[18s_initialToBottom_infinite_linear]">
                 <img src={Celular1} alt="" className="w-full" />
                 <img src={Celular2} alt="" className="w-full" />
                 <img src={Celular3} alt="" className="w-full" />
               </div>
-              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[18s_initialToBottom_infinite_linear]">
                 <img src={Celular1} alt="" className="w-full" />
                 <img src={Celular2} alt="" className="w-full" />
                 <img src={Celular3} alt="" className="w-full" />
               </div>
             </div>
             <div className="flex flex-col gap-inline-xxs">
-              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[10s_middleToBottom_infinite_linear]">
                 <img src={Celular4} alt="" className="w-full" />
                 <img src={Celular5} alt="" className="w-full" />
                 <img src={Celular6} alt="" className="w-full" />
               </div>
-              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[10s_middleToBottom_infinite_linear]">
                 <img src={Celular4} alt="" className="w-full" />
                 <img src={Celular5} alt="" className="w-full" />
                 <img src={Celular6} alt="" className="w-full" />
               </div>
             </div>
             <div className="flex flex-col gap-inline-xxs">
-              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[18s_initialToBottom_infinite_linear]">
                 <img src={Celular7} alt="" className="w-full" />
                 <img src={Celular8} alt="" className="w-full" />
                 <img src={Celular9} alt="" className="w-full" />
               </div>
-              <div className="flex flex-col gap-inline-xxs animate-[25s_initialToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[18s_initialToBottom_infinite_linear]">
                 <img src={Celular7} alt="" className="w-full" />
                 <img src={Celular8} alt="" className="w-full" />
                 <img src={Celular9} alt="" className="w-full" />
               </div>
             </div>
             <div className="flex flex-col gap-inline-xxs">
-              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[10s_middleToBottom_infinite_linear]">
                 <img src={Celular10} alt="" className="w-full" />
                 <img src={Celular11} alt="" className="w-full" />
                 <img src={Celular12} alt="" className="w-full" />
               </div>
-              <div className="flex flex-col gap-inline-xxs animate-[15s_middleToBottom_infinite_linear]">
+              <div className="flex flex-col gap-inline-xxs animate-[10s_middleToBottom_infinite_linear]">
                 <img src={Celular10} alt="" className="w-full" />
                 <img src={Celular11} alt="" className="w-full" />
                 <img src={Celular12} alt="" className="w-full" />
@@ -201,13 +202,13 @@ const App = () => {
         </section>
 
       </main>
-        {/* Footer */}
-        <footer className="pb-stack-xxl px-inline-xxs lg:px-inline-sm xl:px-inline-xl 2xl:px-36">
-          <div className="flex flex-col gap-stack-nano border-t-hairline border-base-dark-highlight pt-stack-sm lg:flex-row lg:justify-between lg:items-center">
-            <p className="text-xxs font-semibold leading-lg xl:text-xs">Igma Delightful Digital Products Company.</p>
-            <p className="text-xxs font-semibold leading-lg xl:text-xs">© Copyright 2023</p>
-          </div>
-        </footer>
+      {/* Footer */}
+      <footer className="pb-stack-xxl px-inline-xxs lg:px-inline-sm xl:px-inline-xl 2xl:px-36">
+        <div className="flex flex-col gap-stack-nano border-t-hairline border-base-dark-highlight pt-stack-sm lg:flex-row lg:justify-between lg:items-center">
+          <p className="text-xxs font-semibold leading-lg xl:text-xs">Igma Delightful Digital Products Company.</p>
+          <p className="text-xxs font-semibold leading-lg xl:text-xs">© Copyright 2023</p>
+        </div>
+      </footer>
     </div>
   );
 };
