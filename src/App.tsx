@@ -70,15 +70,18 @@ const App = () => {
             <button className="mt-stack-lg px-inline-xxxs py-3 bg-base-dark-main text-base-light-contrast font-semibold">Assinar Newsletter</button>
           </form>
           <div className="overflow-hidden relative">
-            <div className="flex gap-stack-xxs pl-stack-xxs">
-              <img src={Celular1} alt="MRV" className="max-w-stack-huge"/>
-              <img src={Celular2} alt="Brasil Prev" className="max-w-stack-huge"/>
-              <img src={Celular3} alt="IDB" className="max-w-stack-huge"/>
-              <img src={Celular4} alt="Comgas" className="max-w-stack-huge"/>
+            <div className="flex gap-stack-xxs pl-inline-xxs">
+              <img src={Celular1} alt="MRV" className="max-w-stack-huge" />
+              <img src={Celular2} alt="Brasil Prev" className="max-w-stack-huge" />
+              <img src={Celular3} alt="IDB" className="max-w-stack-huge" />
+              <img src={Celular4} alt="Comgas" className="max-w-stack-huge" />
             </div>
           </div>
         </section>
-      
+        <footer className="pt-stack-sm pb-stack-xxl px-inline-xxs">
+          <p className="text-xxs font-semibold leading-lg">Igma Delightful Digital Products Company.</p>
+          <p className="pt-stack-nano text-xxs font-semibold leading-lg">© Copyright 2023</p>
+        </footer>
       </main>
     </div>
   );
