@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  <br>
+  <a href="https://igma-teste-okj7.vercel.app"><img src="https://github.com/apocsenpai/igma-teste/assets/87510640/de07bc2e-c12d-4f6b-b36e-1613c3049f71" alt="Igma icon" width="200"/></a>
+  <br>
+    Igma - technical test
+  <br>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,vite,tailwind" width="200"/>
+  </a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#stacks">Stacks</a> •
+  <a href="#requirements">Requirements</a> •
+  <a href="#license">License</a> •
+  <a href="#contact-me">Contact me</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[igmatest.webm](https://github.com/apocsenpai/igma-teste/assets/87510640/0e2e1519-b710-4f9b-b77a-7a81e58cd78b)
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This app is a technical test carried out for a junior frontend developer at [Igma](https://www.linkedin.com/company/igma-digital-product/). This technical test consists of a landing page with some cools animations.
 
-- Configure the top-level `parserOptions` property like this:
+The deploy link is available [here](https://igma-teste-okj7.vercel.app).
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Stacks
+
+    Vite with React and TailwindCSS
+
+## Requirements
+
+You need installing [Git](https://git-scm.com) and [Node 20.9.0 - LTS and npm](https://nodejs.org/en);
+
+```bash
+# Clone this repository
+$ git clone git@github.com:apocsenpai/igma-teste.git
+
+# Go into the directory
+$ cd igma-teste
+
+# install deps
+$ npm i
+
+# start app
+$ npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Contact me
+
+> GitHub [@apocsenpai](https://github.com/apocsenpai) &nbsp;&middot;&nbsp;
+> Email [sennasjonatas@gmail.com](mailto:sennasjonatas@gmail.com) &nbsp;&middot;&nbsp;
+> Linkedin [Jonatas Sennas](https://www.linkedin.com/in/jonatassennas/)
